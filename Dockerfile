@@ -26,11 +26,16 @@ RUN apk --update add \
         php7-soap \
         php7-xml \
         php7-zip \
+        curl \
     && rm -rf /var/cache/apk/*
 
+# php config
 COPY php.ini /etc/php7/conf.d/50-setting.ini
 COPY php-fpm.conf /etc/php7/php-fpm.conf
 
+# composer
+RUN curl -sS htts://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
+
 EXPOSE 9000
 
-CMD ["php-fpm", "-F"]
+CMD ["php-fpm7", "-F"]
