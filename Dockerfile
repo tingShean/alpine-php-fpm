@@ -14,6 +14,7 @@ RUN apk --update add \
         php7-mbstring \
         php7-mcrypt \
         php7-mysqlnd \
+        php7-mysqli \
         php7-opcache \
         php7-openssl \
         php7-pdo \

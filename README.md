@@ -3,6 +3,7 @@ Let the image simple to use
 
 
 ## Update
+* update 2020-01-03 add php7 mysqli
 * update 2018-10-09 add php composer
 * update 2018-10-08 open output-buffering
 * update 2018-10-05 new push
