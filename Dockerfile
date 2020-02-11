@@ -1,7 +1,6 @@
 FROM alpine
 
 RUN apk --update add \
-	php-mysql \
         php7 \
         php7-bcmath \
         php7-dom \
